@@ -20,24 +20,25 @@ This project is a simple **RAG (Retrieval-Augmented Generation) app** that lets 
 - **Streamlit** → UI for uploads, chat, and settings  
 - **HuggingFace Embeddings** → For text vectorization  
 
----
+## ⚡ Quick Start
 
-## 📦 Installation  
+Get up and running in minutes 🚀
 
-# Clone repo
+```bash
+# 1️⃣ Clone the repo
 git clone https://github.com/aden-ai/rag-ollama-chat.git
-cd document-query
+cd rag-ollama-chat
 
-# Create venv (optional but recommended)
+# 2️⃣ Create & activate virtual environment
 python -m venv venv
-source venv/bin/activate   # (Linux/Mac)
-venv\Scripts\activate      # (Windows)
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
 
-# Install dependencies
+# 3️⃣ Install dependencies
 pip install streamlit langchain langchain-community langchain-huggingface langchain-ollama faiss-cpu sentence-transformers pypdf python-docx requests
 
-# Make sure Ollama is installed & running
+# 4️⃣ Run Ollama (make sure it's installed)
 ollama run llama3
 
-# Start the app
+# 5️⃣ Launch the app 🎉
 streamlit run app.py
